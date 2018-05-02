@@ -417,8 +417,8 @@ window.open("http://localhost:7000/result");
                         }
 
                     }
-                    $("#modalcontent").append(matched + "<br/>");
-                    $("#modalphoto").append('<img src="' + matchedphoto + '" style="height;150px;width:150px;"/><br/>');
+                    $("#modalcontent").html(matched + "<br/>");
+                    $("#modalphoto").html('<img src="' + matchedphoto + '" style="height;150px;width:150px;"/><br/>');
 
                 });
 
