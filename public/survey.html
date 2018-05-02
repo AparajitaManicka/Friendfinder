@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Survey</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        footer {
+            background-color: #dc3545;
+            padding: 15px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: black;
+        }
+
+        header {
+            background-color: #dc3545;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            color: black;
+        }
+
+        a {
+            color: black;
+        }
+
+        div {
+            margin: 100px;
+            font-size: 17px;
+        }
+
+        input {
+            margin: 5px;
+        }
+
+        /* The Modal (background) */
+
+       /* .modal {
+            display: none;
+            position: center;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }*/
+
+        /* Modal Content/Box */
+
+        .modal-header {
+            padding: 2px;
+            background-color: #dc3545;
+            color: white;
+        }
+
+        /* Modal Body */
+
+        .modal-body {
+            padding: 2px;
+        }
+
+        /* Modal Footer */
+
+        .modal-footer {
+            padding: 2px;
+            background-color: #dc3545;
+            color: white;
+        }
+
+        /* Modal Content */
+
+        .modal-content {
+            position: top;
+           /* background-color: #fefefe; */
+           background-color: white;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 60%;
+            height:90%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            animation-name: animatetop;
+            animation-duration: 0.4s;
+
+            color: #dc3545;
+        }
+
+
+        /* The Close Button */
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <h1>
+            <strong>Survey Questions</strong>
+        </h1>
+    </header>
+
+
+
+    <div>
+        <h3>
+            <strong>About You</strong>
+        </h3>
+            <form role="form">
+                Name(Required):
+                <br>
+                <input type="text" name="firstname" id="name">
+                <br> Link to Photo Image(Required):
+                <br>
+                <input type="text" name="lastname" id="photo">
+                <br>
+
+                <br>
+                <h5>Answer the below question by choosing an option between 1(Strongly Disagree) and 5(Strongly Agree)</h5>
+                <p style>
+                    <strong>Question 1</strong>
+                </p>
+                <p>Do you know coding?</p>
+                <select name="answer" id="one">
+
+                    <option value="" disabled selected>Select your option</option>
+                    <option>1
+                        <option>2
+                            <option>3
+                                <option>4
+                                    <option>5
+                </select>
+
+                <br>
+                <br>
+                <p>
+                    <strong>Question 2</strong>
+                </p>
+                <p>Are you familiar with javascript?</p>
+                <select name="answer" id="two">
+                    <option value="" disabled selected>Select your option</option>>
+                    <option>1
+                        <option>2
+                            <option>3
+                                <option>4
+                                    <option>5
+                </select>
+                <br>
+                <br>
+                <p>
+                    <strong>Question 3</strong>
+                </p>
+                <p>Have you presented more than 3 papers?</p>
+                <select name="answer" id="three">
+                    <option value="" disabled selected>Select your option</option>
+                    <option>1
+                        <option>2
+                            <option>3
+                                <option>4
+                                    <option>5
+                </select>
+                <br>
+                <br>
+                <p>
+                    <strong>Question 4</strong>
+                </p>
+                <p>Do you like to work in groups of more than 4?</p>
+                <select name="answer" id="four">
+                    <option value="" disabled selected>Select your option</option>
+                    <option>1
+                        <option>2
+                            <option>3
+                                <option>4
+                                    <option>5
+                </select>
+                <br>
+                <br>
+                <p>
+                    <strong>Question 5</strong>
+                </p>
+                <p>Do you like mathematics?</p>
+                <select name="answer" id="five">
+                    <option value="" disabled selected>Select your option</option>
+                    <option>1
+                        <option>2
+                            <option>3
+                                <option>4
+                                    <option>5
+                </select>
+                <br>
+                <br>
+                <p style>
+                    <strong>Question 6</strong>
+                </p>
+                <p>Do you know coding?</p>
+                <select name="answer" id="six">
+                    <option value="" disabled selected>Select your option</option>
+                    <option>1
+                        <option>2
+                            <option>3
+                                <option>4
+                                    <option>5
+                </select>
+
+                <br>
+                <br>
+                <p>
+                    <strong>Question 7</strong>
+                </p>
+                <p>Are you familiar with javascript?</p>
+                <select name="answer" id="seven">
+                    <option value="" disabled selected>Select your option</option>
+                    <option>1
+                        <option>2
+                            <option>3
+                                <option>4
+                                    <option>5
+                </select>
+                <br>
+                <br>
+                <p>
+                    <strong>Question 8</strong>
+                </p>
+                <p>Have you presented more than 3 papers?</p>
+                <select name="answer" id="eight">
+                    <option value="" disabled selected>Select your option</option>
+                    <option>1
+                        <option>2
+                            <option>3
+                                <option>4
+                                    <option>5
+                </select>
+                <br>
+                <br>
+                <p>
+                    <strong>Question 9</strong>
+                </p>
+                <p>Do you like to work in groups of more than 4?</p>
+                <select name="answer" id="nine">
+                    <option value="" disabled selected>Select your option</option>
+                    <option>1
+                        <option>2
+                            <option>3
+                                <option>4
+                                    <option>5
+                </select>
+                <br>
+                <br>
+                <p>
+                    <strong>Question 10</strong>
+                </p>
+                <p>Do you like mathematics?</p>
+                <select name="answer" id="ten">
+                <option value="" disabled selected>Select your option</option>
+                
+                    <option>1
+                        <option>2
+                            <option>3
+                                <option>4
+                                    <option>5
+                </select>
+                <br>
+                <br>
+                <button type="button" class="btn btn-lg btn-danger" id="submit">Submit</button>
+            </form>
+    </div>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <!-- <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Your best match is...</h2>
+            </div>
+            <div class="modal-body">
+                <p id="modalcontent"></p>
+                <p id="modalphoto"></p>
+                <p></p>
+            </div>
+            <div class="modal-footer">
+                <h3></h3>
+            </div> -->
+            <p style="text-align: center;">
+                    <span class="close">&times;</span>
+                <h2><strong>Your best match is...</strong></h2>
+            </p>
+            <p style="text-align: center; font-size:20px; margin:20px;" id="modalcontent"></p>
+            <p style="text-align: center;margin:20px;" id="modalphoto"></p>
+        </div>
+
+    </div>
+
+    <footer style="font-size:16px;">
+        <li>
+            <a href="/api/table">API Research partners List</a>
+        </li>
+        <li>
+            <a href="https://github.com/AparajitaManicka/Friendfinder.git">GitHub Repo</a>
+        </li>
+    </footer>
+    <!-- <script>
+        function openWin() {
+window.open("http://localhost:7000/result");
+}
+    </script> -->
+
+    <script type="text/javascript">
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            var newstudent = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                scores: [$("#one").val().trim(), $("#two").val().trim(), $("#three").val().trim(), $("#four").val().trim(),
+                $("#five").val().trim(), $("#six").val().trim(), $("#seven").val().trim(), $("#eight").val().trim(),
+                $("#nine").val().trim(), $("#ten").val().trim()]
+            };
+
+            console.log(newstudent);
+
+
+
+            $.post("/api/table", newstudent,
+                function (data) {
+                    var modal = document.getElementById('myModal');
+                    var btn = document.getElementById("submit");
+                    var span = document.getElementsByClassName("close")[0];
+                    btn.onclick = function () {
+                        modal.style.display = "block";
+                    }
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                });
+
+
+
+            var currentURL = window.location.origin;
+
+            $.ajax({ url: currentURL + "/api/table", method: "GET" })
+                .then(function (friendsData) {
+                    console.log("------------------------------------");
+                    console.log("URL: " + currentURL + "/api/tables");
+                    console.log("------------------------------------");
+
+                    console.log(friendsData);
+                    console.log("------------------------------------");
+
+
+
+                    var array = [];
+                    var kv = [];
+                    var matched = "";
+                    var matchedphoto;
+                    for (i = 0; i < friendsData.length - 2; i++) {
+                        console.log(friendsData[i].name);
+                        console.log(friendsData[i].scores);
+                        var a = friendsData[friendsData.length - 1].scores;
+                        var b = friendsData[i].scores;
+                        var sum = 0;
+
+                        for (j = 0; j < 10; j++) {
+                            // console.log(friendsData[friendsData.length-1].scores[j]);
+                            // console.log(friendsData[i].scores[j]);
+                            var diff = Math.abs(friendsData[friendsData.length - 1].scores[j] - friendsData[i].scores[j]);
+                            sum = sum + diff;
+                        }
+                        console.log("Difference: " + sum);
+                        array.push(sum);
+                        kv.push({ name: friendsData[i].name, Difference: sum, photo: friendsData[i].photo });
+                        sum = 0;
+
+                    }
+                    console.log(kv);
+                    console.log(array);
+                    var min = Math.min.apply(Math, array)
+                    console.log("Least Difference: " + min)
+                    for (k = 0; k < 5; k++) {
+
+                        if (kv[k].Difference == min) {
+                            matched = kv[k].name;
+                            matchedphoto = kv[k].photo;
+                            console.log("Matched: " + kv[k].name);
+                            console.log(matchedphoto);
+                        }
+
+                    }
+                    $("#modalcontent").append(matched + "<br/>");
+                    $("#modalphoto").append('<img src="' + matchedphoto + '" style="height;150px;width:150px;"/><br/>');
+
+                });
+
+        });
+    </script>
+</body>
+
+</html>

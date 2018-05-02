@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <style>
+        .jumbotron.bg-danger {
+        background-color: #f2dede;
+        }
+        .btn{
+            color:black;
+            margin-bottom: 2%;
+            margin-top: 2%;
+        }
+        p{
+        margin-left: 9.5%;
+        }
+        li{
+            margin-left: 9.5%;
+        }
+        body{
+         font-family: 'Times New Roman', Times, serif;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron bg-danger">
+          <h1>Research partner finder</h1>      
+         
+        </div>
+      </div>
+
+      <p>Answer a few basic question!</p>
+      <p>Then find your research partner whose ideas are similar to yours.</p>
+      <div class="container">   
+              
+            <button type="button" class="btn btn-lg btn-danger" value="Open Window" onclick="openWin()">Go to Survey</button>
+         
+          </div>
+          <li><a href="/api/table">API Research partners List</a></li>
+          <li><a href="https://github.com/AparajitaManicka/Friendfinder.git">GitHub Repo</a></li>
+          <script>
+              function openWin() {
+    window.open("http://localhost:7000/survey");
+}
+          </script>
+</body>
+</html>
